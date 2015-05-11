@@ -2,7 +2,7 @@ import os
 import time
 import subprocess
 import math
-with open('output4_n') as f:
+with open('chrome_cpu') as f:
     lines = f.readlines()
 
 lines = map(str.strip,lines)

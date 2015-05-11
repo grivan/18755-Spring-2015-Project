@@ -3,7 +3,7 @@ import time
 import subprocess
 import math
 import random
-with open('data') as f:
+with open('chrome_cpu') as f:
     lines = f.readlines()
 
 lines = map(str.strip,lines)

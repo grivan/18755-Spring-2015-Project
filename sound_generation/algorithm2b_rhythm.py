@@ -5,7 +5,7 @@ import math
 import random
 from threading import Thread
 
-with open('data') as f:
+with open('chrome_cpu') as f:
     lines = f.readlines()
 
 lines = map(str.strip,lines)
