@@ -1,0 +1,10 @@
+scmin=20;
+scmax=1000;
+scres=20;
+exponents=linspace(log2(scmin),log2(scmax),scres);
+scale=round(2.^exponents);
+q=linspace(-5,5,101);
+m=1;
+load('chrome_network.mat')
+signal1=chrome_network(1:2000);
+[Hq1,tq1,hq1,Dq1,Fq1]=MFDFA1(signal1,scale,q,m,1);
